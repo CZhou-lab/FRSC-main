@@ -1,0 +1,95 @@
+[trainer.py] => config: ./exps/frsc_vtab_in21k.json
+[trainer.py] => dataset: vtab
+[trainer.py] => shuffle: False
+[trainer.py] => init_cls: 10
+[trainer.py] => increment: 10
+[trainer.py] => model_name: frsc
+[trainer.py] => backbone_type: vit_base_patch16_224_in21k_adapter
+[trainer.py] => device: [device(type='cuda', index=1)]
+[trainer.py] => seed: 1993
+[trainer.py] => lambda1: 10
+[trainer.py] => lambda2: 10
+[trainer.py] => init_epochs: 20
+[trainer.py] => init_lr: 0.1
+[trainer.py] => later_epochs: 20
+[trainer.py] => later_lr: 0.1
+[trainer.py] => batch_size: 48
+[trainer.py] => weight_decay: 0.005
+[trainer.py] => min_lr: 0
+[trainer.py] => optimizer: sgd
+[trainer.py] => scheduler: cosine
+[trainer.py] => pretrained: True
+[trainer.py] => ffn_num: 16
+[trainer.py] => scalar: 0.5
+[trainer.py] => pa_lr: 0.1
+[trainer.py] => pa_epochs: 30
+[data_manager.py] => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]
+[trainer.py] => All params: 86153715
+[trainer.py] => Trainable params: 355059
+[frsc.py] => Learning on 0-10
+[frsc.py] => Task 0, Epoch 20/20 => Loss 0.097, Train_accy 98.64
+[frsc.py] => Task correct: 100.0
+[frsc.py] => Task acc: 98.2
+[trainer.py] => No NME accuracy.
+[trainer.py] => CNN: {'total': 98.2, '00-09': 98.2, 'old': 0, 'new': 98.2}
+[trainer.py] => CNN top1 curve: [98.2]
+[trainer.py] => CNN top5 curve: [99.9]
+
+[trainer.py] => Average Accuracy (CNN): 98.2 
+
+[trainer.py] => All params: 86169077
+[trainer.py] => Trainable params: 362740
+[frsc.py] => Learning on 10-20
+[frsc.py] => Task 1, Epoch 20/20 => Loss 0.073, Train_accy 100.00
+[frsc.py] => Task 1, Epoch 30/30 => Loss 0.002, CA_accy 100.00
+[frsc.py] => Task correct: 99.35714285714286
+[frsc.py] => Task acc: 96.14285714285714
+[trainer.py] => No NME accuracy.
+[trainer.py] => CNN: {'total': 95.79, '00-09': 98.1, '10-19': 90.0, 'old': 98.1, 'new': 90.0}
+[trainer.py] => CNN top1 curve: [98.2, 95.79]
+[trainer.py] => CNN top5 curve: [99.9, 99.5]
+
+[trainer.py] => Average Accuracy (CNN): 96.995 
+
+[trainer.py] => All params: 86176757
+[trainer.py] => Trainable params: 362740
+[frsc.py] => Learning on 20-30
+[frsc.py] => Task 2, Epoch 20/20 => Loss 0.183, Train_accy 95.52
+[frsc.py] => Task 2, Epoch 30/30 => Loss 0.003, CA_accy 100.00
+[frsc.py] => Task correct: 99.62264150943396
+[frsc.py] => Task acc: 95.47169811320755
+[trainer.py] => No NME accuracy.
+[trainer.py] => CNN: {'total': 95.26, '00-09': 98.3, '10-19': 89.5, '20-29': 94.52, 'old': 95.79, 'new': 94.52}
+[trainer.py] => CNN top1 curve: [98.2, 95.79, 95.26]
+[trainer.py] => CNN top5 curve: [99.9, 99.5, 99.71]
+
+[trainer.py] => Average Accuracy (CNN): 96.41666666666667 
+
+[trainer.py] => All params: 86184437
+[trainer.py] => Trainable params: 362740
+[frsc.py] => Learning on 30-40
+[frsc.py] => Task 3, Epoch 20/20 => Loss 0.238, Train_accy 94.60
+[frsc.py] => Task 3, Epoch 30/30 => Loss 0.006, CA_accy 100.00
+[frsc.py] => Task correct: 99.11368015414259
+[frsc.py] => Task acc: 95.50417469492614
+[trainer.py] => No NME accuracy.
+[trainer.py] => CNN: {'total': 94.91, '00-09': 98.2, '10-19': 89.25, '20-29': 95.03, '30-39': 94.7, 'old': 95.39, 'new': 94.7}
+[trainer.py] => CNN top1 curve: [98.2, 95.79, 95.26, 94.91]
+[trainer.py] => CNN top5 curve: [99.9, 99.5, 99.71, 99.64]
+
+[trainer.py] => Average Accuracy (CNN): 96.03999999999999 
+
+[trainer.py] => All params: 86192117
+[trainer.py] => Trainable params: 362740
+[frsc.py] => Learning on 40-50
+[frsc.py] => Task 4, Epoch 20/20 => Loss 0.073, Train_accy 100.00
+[frsc.py] => Task 4, Epoch 30/30 => Loss 0.007, CA_accy 100.00
+[frsc.py] => Task correct: 99.26905673512009
+[frsc.py] => Task acc: 95.86959043972618
+[trainer.py] => No NME accuracy.
+[trainer.py] => CNN: {'total': 95.37, '00-09': 97.8, '10-19': 89.5, '20-29': 94.82, '30-39': 94.74, '40-49': 100.0, 'old': 94.87, 'new': 100.0}
+[trainer.py] => CNN top1 curve: [98.2, 95.79, 95.26, 94.91, 95.37]
+[trainer.py] => CNN top5 curve: [99.9, 99.5, 99.71, 99.64, 99.76]
+
+[trainer.py] => Average Accuracy (CNN): 95.90599999999999 
+
